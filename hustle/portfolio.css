@@ -1,0 +1,65 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.homepage{
+    display: flex;   
+}
+
+.homepage a{
+    padding: 7px 12px;
+    background: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+}
+
+.backpage{
+    display: flex;   
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.backpage a{
+    
+    padding: 7px 12px;
+    background: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+}
+.section{
+    padding: 100px 20px;
+}
+.title{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.slides{
+display: grid;
+}
+
+.slide img{
+    width: 100%;
+    border-radius: 10px;
+    margin: top;
+}
+
+@media (min-width: 1189px){
+    .slides{
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 5px;
+    }
+
+    
+}
